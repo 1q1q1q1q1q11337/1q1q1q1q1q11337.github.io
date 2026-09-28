@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Елена Шайкина — Junior Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="container" id="resumeContent">
+
+        <!-- ===== ШАПКА ===== -->
+        <header>
+            <img src="https://via.placeholder.com/130" alt="Елена Шайкина" crossorigin="anonymous">
+            <div class="header-info">
+                <h1>Шайкина Елена Дмитриевна</h1>
+                <p class="subtitle">Стажёр / Junior Data Analyst</p>
+                <div class="contacts">
+                    <span>📍 Москва</span>
+                    <span>✉️ <a href="mailto:LeravLi@yandex.ru">LeravLi@yandex.ru</a></span>
+                    <span>📞 <a href="tel:+79616959162">+7 (961) 695-91-62</a></span>
+                    <span>💬 Telegram: <a href="https://t.me/lenash3" target="_blank" rel="noopener">@lenash3</a></span>
+                    <span>🐙 GitHub: <a href="https://github.com/1q1q1q1q1q11337" target="_blank" rel="noopener">1q1q1q1q1q11337</a></span>
+                </div>
+            </div>
+            <button class="download-btn no-print" onclick="downloadPDF()">
+                ⬇ Скачать резюме (PDF)
+            </button>
+        </header>
+
+        <main>
+
+            <!-- ===== ПРОФИЛЬ ===== -->
+            <section>
+                <h2>Профиль</h2>
+                <p class="profile-text">
+                    Студентка 3 курса РУТ (МИИТ) по направлению «Прикладная информатика в экономике и бизнесе». 
+                    Имею практический опыт в анализе данных, разработке интерактивных дашбордов, проектировании баз данных 
+                    и построении ETL-процессов. В учебных и личных проектах собирала и анализировала бизнес-требования, 
+                    описывала процессы AS IS / TO BE, проектировала БД, писала SQL-запросы к PostgreSQL и строила дашборды 
+                    в Power BI. Владею Python (Pandas, NumPy, Matplotlib), понимаю принципы моделирования данных, 
+                    знакома с методологиями Agile. Готова развиваться в области автоматизации отчётности и визуализации данных.
+                </p>
+            </section>
+
+            <!-- ===== ОБРАЗОВАНИЕ ===== -->
+            <section>
+                <h2>Образование</h2>
+                <div class="edu-item">
+                    <strong>Российский университет транспорта (РУТ МИИТ)</strong>
+                    <div class="meta">2024–2028 — Прикладная информатика в экономике и бизнесе</div>
+                </div>
+            </section>
+
+            <!-- ===== ДОП. ОБРАЗОВАНИЕ ===== -->
+            <section>
+                <h2>Дополнительное образование</h2>
+                <div class="extra-edu">
+                    <div class="badge">
+                        <strong>Программирование на языке Python</strong>
+                        <span>2020–2024 | Лаборатория РоБин</span>
+                    </div>
+                    <div class="badge">
+                        <strong>Аналитик в роботизации бизнес-процессов</strong>
+                        <span>2026 | DM Академия (DM Solutions)</span>
+                    </div>
+                    <div class="badge">
+                        <strong>Разработка решений на платформах RPA и OCR</strong>
+                        <span>2026 | DM Академия (DM Solutions)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== НАВЫКИ ===== -->
+            <section>
+                <h2>Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Языки программирования и запросы</h3>
+                        <p>Python (Pandas, Matplotlib, NumPy, Flask, Django), C#, HTML, CSS, JS, VBA, SQL (PostgreSQL, JOIN, GROUP BY, подзапросы)</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Инструменты</h3>
+                        <p>MS Excel (сводные таблицы, ВПР, Power Query), MS PowerPoint, MS Project, Power BI (дашборды, визуализация), базовое понимание ETL-процессов, Git</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Моделирование и анализ данных</h3>
+                        <p>Проектирование БД (концептуальное, логическое, физическое), моделирование данных, анализ и выявление трендов, проверка гипотез, A/B-тестирование, теория вероятностей и математическая статистика, высшая математика, алгоритмы и структуры данных</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Бизнес-анализ и работа с процессами</h3>
+                        <p>Сбор и анализ бизнес-требований, описание процессов AS IS / TO BE, формирование User Stories и функциональных требований, проведение интервью с пользователями, проектирование информационных систем</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Иностранные языки</h3>
+                        <p>Английский — B1+ (Intermediate)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== ЛИЧНЫЕ КАЧЕСТВА ===== -->
+            <section>
+                <h2>Личные качества</h2>
+                <div class="soft-skills">
+                    <span>Опыт преподавания — умею объяснять сложные вещи простыми словами</span>
+                    <span>Работала с заказчиком в учебных проектах: собирала требования и защищала решения</span>
+                    <span>Быстро осваиваю новые инструменты</span>
+                    <span>Умею задавать правильные вопросы и структурировать информацию</span>
+                    <span>Работаю в команде и координирую задачи</span>
+                    <span>Ориентирована на результат и развитие в долгосрочных проектах</span>
+                </div>
+            </section>
+
+            <!-- ===== ОПЫТ РАБОТЫ ===== -->
+            <section>
+                <h2>Опыт работы</h2>
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Репетитор по информатике и математике</h3>
+                        <span class="date">10.2024 – 06.2026</span>
+                    </div>
+                    <div class="job-company">Онлайн-школа «Тетрика»</div>
+                    <ul>
+                        <li>Преподавание основ информатики и математики</li>
+                        <li>Подготовка к экзаменам (МЦКО, ЕГЭ, ОГЭ), олимпиадам</li>
+                        <li>Преподавание основ программирования на Python</li>
+                        <li>Анализ успеваемости учеников (ведение таблиц, выявление слабых мест в обучении)</li>
+                        <li>Составление плана обучения и разработка методических материалов</li>
+                        <li>Коммуникация с учениками и потенциальными клиентами</li>
+                    </ul>
+                    <div class="result-block">
+                        <strong>Результат:</strong> Помогла более 26 ученикам с освоением материала и подготовкой к экзаменам. 
+                        Средний балл учеников — 5, ОГЭ — 5, ЕГЭ — 83,9.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== ПРОЕКТЫ (ЛЕНТА) ===== -->
+            <section>
+                <div class="projects-header">
+                    <h2>Проекты</h2>
+                    <div class="carousel-controls no-print">
+                        <button class="carousel-btn" id="prevBtn" aria-label="Предыдущий проект">‹</button>
+                        <button class="carousel-btn" id="nextBtn" aria-label="Следующий проект">›</button>
+                    </div>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Карточки рендерятся через JS -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            © 2026 Елена Шайкина — Junior Data Analyst
+        </footer>
+    </div>
+
+    <!-- ===== МОДАЛЬНОЕ ОКНО ===== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+            <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
